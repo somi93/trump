@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=production node ./bin/cross-env",
-    "dev": "cross-env NODE_ENV=build node ./bin/cross-env",
+    "start": "cross-env NODE_ENV=production node ./node_modules/bin/cross-env",
+    "dev": "cross-env NODE_ENV=build node ./node_modules/bin/cross-env",
     "build": "cross-env NODE_ENV=production nuxt build",
     "nuxt": "cross-env HOST=0.0.0.0 nuxt"
   },
