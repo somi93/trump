@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node ./node_modules/cross-env/dist/bin/cross-env.js",
-    "dev": "NODE_ENV=build node ./node_modules/cross-env/dist/bin/cross-env.js",
+    "start": "cross-env NODE_ENV=production node ./bin/cross-env",
+    "dev": "cross-env NODE_ENV=build node ./bin/cross-env",
     "build": "cross-env NODE_ENV=production nuxt build",
     "nuxt": "cross-env HOST=0.0.0.0 nuxt"
   },
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "cross-env": "^5.0.0",
+    "cross-env": "^5.0.5",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
